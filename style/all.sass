@@ -1,0 +1,158 @@
+$font-stack: Arial, sans-serif
+$primary-color: #333
+$primary-fontsize: 13pt
+
+$bg-clr:#EDF1F4
+$blue-dark: #000033
+$blue:#005BA9
+$blue-light: #ccccff
+$orange: #ff9900
+$orange-light:#ffcc66
+$red-dark:#990000
+$red:#cc0000
+$red-light:#ff6666
+$green-dark:#336600
+$green:#009F00
+$green-light:#52CC52
+$green-lightest:#A2FFA2
+
+$break-small: 600px
+$break-large: 1200px
+
+body
+  background-color: $bg-clr
+  font: 100% $font-stack
+  color: $primary-color
+  padding: 0px 0px 0px 0px
+
+table
+  border: 0px
+  background-color: white
+  width: 100%
+  box-shadow: 5px 5px 2px #E4E7EA
+  padding: 10px
+  thead
+    background-color: $bg-clr
+  tr
+    border-radius: 5px
+    border: 0px
+
+.mutation-list
+  td
+    border-radius: 0px
+    padding: 10px 10px 10px 20px
+    @media screen and ( max-width: $break-small)
+      font-size: 9pt
+
+a
+  text-decoration: none
+
+input
+  font-size: $primary-fontsize
+  padding: 10px 0px 10px 10px
+  width: 100%
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+
+.float-right
+  float: right
+.pointer
+  cursor: pointer
+
+.header
+  position: fixed
+  top: 0px
+  left: 0px
+  color: white
+  width: 100%
+  background-color: $blue
+  font-size: 20pt
+  text-align: center
+  padding-top: 10px
+.content
+  margin-top: 55px
+
+.mutation
+  background: white
+  border-radius: 5px
+  cursor: pointer
+.mainincome
+  @extend .mutation
+  background-color: $green-lightest
+
+.button
+  background-color: orange
+  border-radius: 25px
+  color: white
+  padding: 10px 20px 10px 20px
+  border: none
+  font-size: $primary-fontsize
+  cursor: pointer
+
+.calc-spending
+  @extend .button
+  width: 100%
+  font-size: 18pt
+  background-color: $orange
+  box-shadow: 5px 5px 2px #E4E7EA
+  margin-bottom: 10px
+
+.add-mutation
+  @extend .float-right
+  margin-bottom: 20px
+  margin-top: 10px
+
+.bankamount-input
+  width: 100%
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  color: $green
+  font-size: 42pt
+
+.to-spend-per-day
+  color: $green
+  font-size: 22pt
+
+.topay
+  background-color: $red-light
+  color: white
+
+.torecieve
+  background-color: $green-light
+  color: white
+
+.debet
+  color: $red
+
+.credit
+  color: $green
+
+.mainincome
+  font-weight: bold
+  color: $green
+
+.save-btn
+  @extend .float-right
+  background: url("../images/bewaar.png") no-repeat
+  cursor: pointer
+  width: 174px
+  height: 55px
+  border: none
+
+.cancel-btn
+  background: url("../images/cancel.png") no-repeat
+  cursor: pointer
+  width: 174px
+  height: 55px
+  border: none
+
+.result
+  border: 0px
+  background-color: white
+  width: 100%
+  box-shadow: 5px 5px 2px #E4E7EA
+  padding: 10px
+  font-size: 14pt
+
+.small-font
+  font-size: 8pt
