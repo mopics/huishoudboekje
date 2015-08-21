@@ -39,8 +39,13 @@ app.controller( "MutatiesController", function( Mutations, $scope, $http, $locat
 		});
 		$scope.vasteMutaties = mutaties;
 	}
+	function bankAmountLoaded( data ){
+		$scope.bankAmount = data.amount;
+	}
 	// get mutations from service:
-	Mutations.all( mutatiesLoaded );
+	Mutations.getMutations( mutatiesLoaded );
+	Mutations.getBankamount( bankAmountLoaded );
+	// get bank amount from service
 
 	//==============================================METHODS ========================================================//
 	// todo make a service out of this function, just for the fun of it.
@@ -49,6 +54,10 @@ app.controller( "MutatiesController", function( Mutations, $scope, $http, $locat
 	}
 
 	$scope.calculateAllowedExpenses = function() {
+
+		//update db.amount
+		Mutations.amount( $scope.bankAmount, function(){} );
+
 
 		if( !$scope.vasteMutaties ) return;
 

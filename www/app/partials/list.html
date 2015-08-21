@@ -1,4 +1,9 @@
-<table ng-show="vasteMutaties.length>0"><tr><td>Wat staat er op de bank?</td><td><input class="bankamount-input" type="text" ng-model="bankAmount"></td></tr></table>
+<table ng-show="vasteMutaties.length>0">
+	<tr>
+		<td>Your current bank account balance:</td>
+		<td><input class="bankamount-input" type="text" ng-model="bankAmount"></td>
+	</tr>
+</table>
 
 <!--<button class="calc-spending" ng-click="calculateAllowedExpenses()" >Bereken bestedingsruimte voor de resterende maand.</button>-->
 
@@ -6,9 +11,9 @@
 <br>
 <table ng-show="vasteMutaties.length>0" width="100%" class="mutation-list">
 	<thead>
-	<td ng-click="sortOnName()">kosten/inkomsten</td>
-	<td ng-click="sortOnAmount()">bedrag</td>
-	<td ng-click="sortOnDate()">dag</td>
+	<td ng-click="sortOnName()">costs/income</td>
+	<td ng-click="sortOnAmount()">amount</td>
+	<td ng-click="sortOnDate()">day</td>
 	</thead>
 	<tr ng-click="mutationClicked(m.id)" ng-repeat="m in vasteMutaties" class="mutation" ng-class="{mainincome:m.mainincome}">
 		<td>{{m.name}}</td>
@@ -17,4 +22,4 @@
 	</tr>
 </table>
 <br>
-<a ng-href="#/new/" class="add-mutation"><img ng-src="images/voegtoe.png" /></a>
+<a ng-href="#/new/" class="add-mutation">Add mutation</a>

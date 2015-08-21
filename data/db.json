@@ -1,41 +1,20 @@
 {
+  "bank": {
+    "amount": 2500
+  },
   "mutations": [
     {
       "id": 0,
-      "name": "huur",
-      "amount": -428,
+      "name": "Rent",
+      "amount": -1400,
       "monthday": 3,
       "monthly": 1,
-      "due": false,
+      "due": true,
       "dueToday": false
     },
     {
-      "id": 1,
-      "name": "eneco_abbo",
-      "amount": -11.08,
-      "monthday": 26,
-      "monthly": 1,
-      "due": 0
-    },
-    {
-      "id": 2,
-      "name": "huurtoeslag",
-      "amount": 148,
-      "monthday": 20,
-      "monthly": 1,
-      "due": 0
-    },
-    {
-      "id": 3,
-      "name": "zorgtoeslag",
-      "amount": 78,
-      "monthday": 20,
-      "monthly": 1,
-      "due": 0
-    },
-    {
       "id": 4,
-      "name": "ohra ziekte",
+      "name": "health insurance",
       "amount": -110.14,
       "monthday": 3,
       "monthly": 1,
@@ -44,88 +23,58 @@
     },
     {
       "id": 5,
-      "name": "ohra schade",
-      "amount": -20.64,
-      "monthday": 2,
+      "name": "damage insurance",
+      "amount": -50.64,
+      "monthday": 4,
       "monthly": 1,
-      "due": 0
-    },
-    {
-      "id": 7,
-      "name": "electrabel",
-      "amount": -74,
-      "monthday": 21,
-      "monthly": 1,
-      "due": 0
+      "due": true,
+      "dueToday": false
     },
     {
       "id": 9,
       "name": "greenpeace",
-      "amount": -2.27,
+      "amount": -50,
       "monthday": 22,
       "monthly": 1,
-      "due": 0
-    },
-    {
-      "id": 10,
-      "name": "bibliotheek",
-      "amount": -2.58,
-      "monthday": 0,
-      "monthly": 12,
-      "due": 0
-    },
-    {
-      "id": 11,
-      "name": "kpn tel.int.",
-      "amount": -65,
-      "monthday": 20,
-      "monthly": 1,
-      "due": 0
+      "due": true,
+      "dueToday": false
     },
     {
       "id": 12,
-      "name": "t-mobile",
+      "name": "phone",
       "amount": -12,
       "monthday": 3,
       "monthly": 1,
-      "due": 0
-    },
-    {
-      "id": 13,
-      "name": "eigen risico",
-      "amount": -25,
-      "monthday": 0,
-      "monthly": 12,
-      "due": 0
+      "due": true,
+      "dueToday": false
     },
     {
       "id": 17,
-      "name": "sparen",
-      "amount": -1,
-      "monthday": 1,
+      "name": "To Savings account",
+      "amount": -500,
+      "monthday": 8,
       "monthly": 1,
       "due": true,
       "dueToday": false
     },
     {
       "id": 18,
-      "name": "Bijstand",
-      "amount": 900,
+      "name": "Apple Inc. Paycheck",
+      "amount": 4500,
       "monthday": 7,
       "monthly": 1,
       "due": false,
-      "mainincome": true
+      "mainincome": true,
+      "dueToday": false
     },
     {
       "id": 19,
-      "name": "Dunea water",
-      "amount": -13,
+      "name": "energy",
+      "amount": -90,
       "monthday": 10,
       "monthly": 1,
       "due": false,
       "dueToday": false
     }
-  ],
-  "db": [],
-  "mutation": []
+  ]
 }

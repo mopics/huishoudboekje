@@ -1,6 +1,7 @@
 $font-stack: Arial, sans-serif
 $primary-color: #333
 $primary-fontsize: 13pt
+$button_fontsize: 22pt
 
 $bg-clr:#EDF1F4
 $blue-dark: #000033
@@ -86,7 +87,7 @@ input
   color: white
   padding: 10px 20px 10px 20px
   border: none
-  font-size: $primary-fontsize
+  font-size: $button_fontsize
   cursor: pointer
 
 .calc-spending
@@ -98,7 +99,8 @@ input
   margin-bottom: 10px
 
 .add-mutation
-  @extend .float-right
+  @extend .float-right, .button
+  background-color: $green
   margin-bottom: 20px
   margin-top: 10px
 
@@ -132,16 +134,18 @@ input
   color: $green
 
 .save-btn
-  @extend .float-right
-  background: url("../images/bewaar.png") no-repeat
-  cursor: pointer
+  @extend .float-right, .button
+  // background: url("../images/bewaar.png") no-repeat
+  // cursor: pointer
+  background-color: $green
   width: 174px
   height: 55px
   border: none
 
 .cancel-btn
-  background: url("../images/cancel.png") no-repeat
-  cursor: pointer
+  @extend .button
+  //background: url("../images/cancel.png") no-repeat
+  //cursor: pointer
   width: 174px
   height: 55px
   border: none

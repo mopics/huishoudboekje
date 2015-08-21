@@ -61,13 +61,13 @@ input {
 .mainincome {
   background-color: #A2FFA2; }
 
-.button, .calc-spending {
+.button, .calc-spending, .add-mutation, .save-btn, .cancel-btn {
   background-color: orange;
   border-radius: 25px;
   color: white;
   padding: 10px 20px 10px 20px;
   border: none;
-  font-size: 13pt;
+  font-size: 22pt;
   cursor: pointer; }
 
 .calc-spending {
@@ -78,6 +78,7 @@ input {
   margin-bottom: 10px; }
 
 .add-mutation {
+  background-color: #009F00;
   margin-bottom: 20px;
   margin-top: 10px; }
 
@@ -111,15 +112,12 @@ input {
   color: #009F00; }
 
 .save-btn {
-  background: url("../images/bewaar.png") no-repeat;
-  cursor: pointer;
+  background-color: #009F00;
   width: 174px;
   height: 55px;
   border: none; }
 
 .cancel-btn {
-  background: url("../images/cancel.png") no-repeat;
-  cursor: pointer;
   width: 174px;
   height: 55px;
   border: none; }

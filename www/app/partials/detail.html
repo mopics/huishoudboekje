@@ -5,24 +5,24 @@
 	</tr>-->
 	<tr><td colspan="3"><img ng-click="delete()" ng-hide="addNewMode" class="float-right pointer" ng-src="images/delete32.png"></td> </tr>
 	<tr>
-		<td>Naam:</td><td><input type="text"
+		<td>Name:</td><td><input type="text"
 			ng-model="mutatie.name" required></td>
 	</tr>
 	<tr>
-		<td>Bedrag:<div class="small-font">(vul negatief getal in als het een kosten mutatie is)</div></td><td><input type="number"
+		<td>Ammount:<div class="small-font">(enter negative number if it is a cost mutation)</div></td><td><input type="number"
 			ng-model="mutatie.amount"
 			ng-max="10000"
 			ng-min="-10000" required></td>
 	</tr>
 	<tr ng-show="mutatie.amount>0" >
-		<td>Hoofdinkomen?</td><td>
+		<td>Mainincome?</td><td>
 		<input type="checkbox"
 			   ng-model="mutatie.mainincome"
 			   >
 		</td>
 	</tr>
 	<tr>
-		<td>datum :</td><td><input type="number"
+		<td>date :</td><td><input type="number"
 			ng-model="mutatie.monthday"
 			ng-max="31"
 			ng-min="1" max="31" min="1" required></td>
@@ -32,6 +32,6 @@
 	</tr>-->
 	</table>
 	<br>
-	<button class="cancel-btn" ng-click="cancel()"></button>
-	<button class="save-btn" ng-click="save()" ng-disabled="!mutatieForm.$valid"></button>
+	<button class="cancel-btn" ng-click="cancel()">Cancel</button>
+	<button class="save-btn" ng-click="save()" ng-disabled="!mutatieForm.$valid">Save</button>
 </form>
