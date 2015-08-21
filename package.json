@@ -1,0 +1,25 @@
+{
+  "name": "huishoudboekje",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jsonserver.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "json-server": "^0.7.25"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node jsonserver.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mopics/huishoudboekje.git"
+  },
+  "author": "Peter Dijkstra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mopics/huishoudboekje/issues"
+  },
+  "homepage": "https://github.com/mopics/huishoudboekje#readme"
+}

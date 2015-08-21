@@ -51,14 +51,6 @@
       "due": 0
     },
     {
-      "id": 6,
-      "name": "rabo bankk.",
-      "amount": -3,
-      "monthday": 1,
-      "monthly": 1,
-      "due": 0
-    },
-    {
       "id": 7,
       "name": "electrabel",
       "amount": -74,
